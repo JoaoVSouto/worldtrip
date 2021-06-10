@@ -28,6 +28,8 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
+
+          <meta name="theme-color" content="#47585b" />
         </Head>
 
         <body>
