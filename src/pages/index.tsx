@@ -146,7 +146,7 @@ export default function Home() {
             title="América do Norte"
             description="O segundo maior continente."
             img={{
-              src: '/img/na-banner.jpg',
+              src: 'https://images.unsplash.com/photo-1445023086979-7244a12345a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
               alt: 'Fotografia da estátua da liberdade',
             }}
           />
@@ -156,7 +156,7 @@ export default function Home() {
             title="América do Sul"
             description="O continente mais tropical."
             img={{
-              src: '/img/sa-banner.jpg',
+              src: 'https://images.unsplash.com/photo-1560455974-f8f8d2927175?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80',
               alt: 'Fotografia aérea da praia de Copacabana',
             }}
           />
@@ -166,7 +166,7 @@ export default function Home() {
             title="Ásia"
             description="O continente mais diverso."
             img={{
-              src: '/img/asia-banner.jpg',
+              src: 'https://images.unsplash.com/photo-1535139262971-c51845709a48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
               alt: 'Fotografia de uma torre tailandesa vermelha e marrom',
             }}
           />
@@ -176,7 +176,7 @@ export default function Home() {
             title="África"
             description="O continente mãe."
             img={{
-              src: '/img/africa-banner.jpg',
+              src: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
               alt: 'Fotografia de uma árvore entre terras verdes durante o alvorecer',
             }}
           />
@@ -186,8 +186,8 @@ export default function Home() {
             title="Europa"
             description="O continente mais antigo."
             img={{
-              src: '/img/europe-banner.jpg',
-              alt: 'Fotografia aérea de uma iluminada ponte de concreto',
+              src: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+              alt: 'Fotografia tirada durante o dia de flores com pétalas brancas e rosas em uma grade de metal perto de casas de concreto',
             }}
           />
         </SwiperSlide>
@@ -196,7 +196,7 @@ export default function Home() {
             title="Oceania"
             description="O continente mais novo."
             img={{
-              src: '/img/oceania-banner.jpg',
+              src: 'https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80',
               alt: 'Fotografia da casa de ópera de Sydney',
             }}
           />
