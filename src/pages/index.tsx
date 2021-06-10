@@ -4,8 +4,6 @@ import {
   Divider,
   Flex,
   Heading,
-  Image,
-  Img,
   Text,
   UnorderedList,
   useToken,
@@ -22,6 +20,7 @@ import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 
+import Header from 'components/Header';
 import Airplane from 'components/Airplane';
 import TravelType from 'components/TravelType';
 import SlideItem from 'components/SlideItem';
@@ -39,9 +38,7 @@ export default function Home() {
         <title>worldtrip</title>
       </Head>
 
-      <Flex justify="center" align="center" py={[4, 5, 7]}>
-        <Img src="/img/logo.svg" alt="world trip" w={[20, 32, 48]} />
-      </Flex>
+      <Header />
 
       <Box
         bgImage="/img/banner-bg.jpg"
