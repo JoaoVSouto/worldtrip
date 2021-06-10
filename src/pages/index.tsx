@@ -1,12 +1,5 @@
 import Head from 'next/head';
-import {
-  Box,
-  Divider,
-  Flex,
-  Text,
-  UnorderedList,
-  useToken,
-} from '@chakra-ui/react';
+import { Box, Divider, Text, useToken } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
   Pagination,
@@ -21,7 +14,7 @@ import 'swiper/components/pagination/pagination.min.css';
 
 import Header from 'components/Header';
 import Hero from 'components/Hero';
-import TravelType from 'components/TravelType';
+import TravelList from 'components/TravelList';
 import SlideItem from 'components/SlideItem';
 
 import styles from 'styles/swiper.module.scss';
@@ -41,40 +34,7 @@ export default function Home() {
 
       <Hero />
 
-      <Box px={[4, 6, 8]}>
-        <Flex
-          as={UnorderedList}
-          flexWrap="wrap"
-          justify={{ base: 'center', lg: 'space-between' }}
-          listStyleType="none"
-          css={{ gap: '1.75rem' }}
-          maxW="1240px"
-          mx="auto"
-          mt={{ base: 9, lg: 28 }}
-          mb={{ base: 9, lg: 20 }}
-        >
-          <TravelType
-            label="vida noturna"
-            img={{ src: '/img/cocktail.svg', alt: 'Coquetel' }}
-          />
-          <TravelType
-            label="praia"
-            img={{ src: '/img/surf.svg', alt: 'Surf' }}
-          />
-          <TravelType
-            label="moderno"
-            img={{ src: '/img/building.svg', alt: 'Prédio' }}
-          />
-          <TravelType
-            label="clássico"
-            img={{ src: '/img/museum.svg', alt: 'Museu' }}
-          />
-          <TravelType
-            label="e mais..."
-            img={{ src: '/img/earth.svg', alt: 'Planeta Terra' }}
-          />
-        </Flex>
-      </Box>
+      <TravelList />
 
       <Divider
         borderColor="gray.600"
