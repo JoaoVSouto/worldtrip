@@ -11,7 +11,12 @@ import {
   useToken,
 } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper/core';
+import SwiperCore, {
+  Pagination,
+  Navigation,
+  Autoplay,
+  Lazy,
+} from 'swiper/core';
 
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
@@ -23,7 +28,7 @@ import SlideItem from 'components/SlideItem';
 
 import styles from 'styles/swiper.module.scss';
 
-SwiperCore.use([Pagination, Navigation, Autoplay]);
+SwiperCore.use([Pagination, Navigation, Autoplay, Lazy]);
 
 export default function Home() {
   const yellow400 = useToken('colors', 'yellow.400');
@@ -129,6 +134,7 @@ export default function Home() {
         as={Swiper}
         className={styles.swiperContainer}
         loop
+        lazy
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}

@@ -15,7 +15,8 @@ export default function SlideItem({ description, img, title }: SlideItemProps) {
   return (
     <>
       <Image
-        src={img.src}
+        className="swiper-lazy"
+        data-src={img.src}
         alt={img.alt}
         objectFit="cover"
         h="100%"
