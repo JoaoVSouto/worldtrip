@@ -13,6 +13,7 @@ import {
   PopoverArrow,
   PopoverBody,
   Container,
+  SimpleGrid,
 } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
 
@@ -93,6 +94,183 @@ export default function Home() {
         <Heading as="h3" fontWeight="medium" fontSize="2xl" mt={8}>
           Cidades +100
         </Heading>
+
+        <SimpleGrid
+          minChildWidth="256px"
+          justifyItems="center"
+          gap={5}
+          mt={5}
+          mb={4}
+        >
+          <Flex direction="column" w={256} borderRadius="2xl">
+            <Image
+              src="https://images.unsplash.com/photo-1454537468202-b7ff71d51c2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256"
+              alt="Fotografia da ponte de Londres"
+              h={173}
+              objectFit="cover"
+              borderTopRadius="base"
+            />
+
+            <Flex
+              justify="space-between"
+              align="center"
+              bg="white"
+              px={6}
+              pb={6}
+              pt={5}
+              borderWidth="1px"
+              borderTopWidth={0}
+              borderColor="yellow.200"
+              borderBottomRadius="base"
+            >
+              <Box fontFamily="Barlow">
+                <Text fontSize="xl" fontWeight="semibold">
+                  Londres
+                </Text>
+                <Text color="gray.400" mt={2}>
+                  Reino Unido
+                </Text>
+              </Box>
+
+              <Image src="/img/flags/uk.png" alt="Bandeira do Reino Unido" />
+            </Flex>
+          </Flex>
+          <Flex direction="column" w={256} borderRadius="2xl">
+            <Image
+              src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256"
+              alt="Fotografia da torre Eiffel em Paris"
+              h={173}
+              objectFit="cover"
+              borderTopRadius="base"
+            />
+
+            <Flex
+              justify="space-between"
+              align="center"
+              bg="white"
+              px={6}
+              pb={6}
+              pt={5}
+              borderWidth="1px"
+              borderTopWidth={0}
+              borderColor="yellow.200"
+              borderBottomRadius="base"
+            >
+              <Box fontFamily="Barlow">
+                <Text fontSize="xl" fontWeight="semibold">
+                  Paris
+                </Text>
+                <Text color="gray.400" mt={2}>
+                  França
+                </Text>
+              </Box>
+
+              <Image src="/img/flags/fr.png" alt="Bandeira da França" />
+            </Flex>
+          </Flex>
+          <Flex direction="column" w={256} borderRadius="2xl">
+            <Image
+              src="https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256"
+              alt="Fotografia diurna de um domo de concreto perto de uma ponte em Roma"
+              h={173}
+              objectFit="cover"
+              borderTopRadius="base"
+            />
+
+            <Flex
+              justify="space-between"
+              align="center"
+              bg="white"
+              px={6}
+              pb={6}
+              pt={5}
+              borderWidth="1px"
+              borderTopWidth={0}
+              borderColor="yellow.200"
+              borderBottomRadius="base"
+            >
+              <Box fontFamily="Barlow">
+                <Text fontSize="xl" fontWeight="semibold">
+                  Roma
+                </Text>
+                <Text color="gray.400" mt={2}>
+                  Itália
+                </Text>
+              </Box>
+
+              <Image src="/img/flags/it.png" alt="Bandeira da Itália" />
+            </Flex>
+          </Flex>
+          <Flex direction="column" w={256} borderRadius="2xl">
+            <Image
+              src="https://images.unsplash.com/photo-1558717907-366df4bdcac1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256"
+              alt="Fotografia de uma paisagem de uma ponte indo em direção a uma cidade"
+              h={173}
+              objectFit="cover"
+              borderTopRadius="base"
+            />
+
+            <Flex
+              justify="space-between"
+              align="center"
+              bg="white"
+              px={6}
+              pb={6}
+              pt={5}
+              borderWidth="1px"
+              borderTopWidth={0}
+              borderColor="yellow.200"
+              borderBottomRadius="base"
+            >
+              <Box fontFamily="Barlow">
+                <Text fontSize="xl" fontWeight="semibold">
+                  Praga
+                </Text>
+                <Text color="gray.400" mt={2}>
+                  República Tcheca
+                </Text>
+              </Box>
+
+              <Image
+                src="/img/flags/cz.png"
+                alt="Bandeira da República Tcheca"
+              />
+            </Flex>
+          </Flex>
+          <Flex direction="column" w={256} borderRadius="2xl">
+            <Image
+              src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=256"
+              alt="Fotografia de um corpo d'água abaixo do céu branco"
+              h={173}
+              objectFit="cover"
+              borderTopRadius="base"
+            />
+
+            <Flex
+              justify="space-between"
+              align="center"
+              bg="white"
+              px={6}
+              pb={6}
+              pt={5}
+              borderWidth="1px"
+              borderTopWidth={0}
+              borderColor="yellow.200"
+              borderBottomRadius="base"
+            >
+              <Box fontFamily="Barlow">
+                <Text fontSize="xl" fontWeight="semibold">
+                  Amsterdã
+                </Text>
+                <Text color="gray.400" mt={2}>
+                  Holanda
+                </Text>
+              </Box>
+
+              <Image src="/img/flags/ne.png" alt="Bandeira da Holanda" />
+            </Flex>
+          </Flex>
+        </SimpleGrid>
       </Container>
     </>
   );
