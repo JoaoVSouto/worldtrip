@@ -1,6 +1,12 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { Flex, Icon, Img, Link as ChakraLink } from '@chakra-ui/react';
+import {
+  Container,
+  Flex,
+  Icon,
+  Img,
+  Link as ChakraLink,
+} from '@chakra-ui/react';
 import { FaChevronLeft } from 'react-icons/fa';
 
 export default function Header() {
@@ -13,15 +19,17 @@ export default function Header() {
       as="header"
       justify="center"
       align="center"
-      pos="relative"
       py={[4, 5, 7]}
+      pos="relative"
     >
       {shouldNavigateBackAppear && (
-        <Link href="/" passHref>
-          <ChakraLink pos="absolute" left={4}>
-            <Icon as={FaChevronLeft} fontSize={14} />
-          </ChakraLink>
-        </Link>
+        <Container maxW="1240px" pos="absolute">
+          <Link href="/" passHref>
+            <ChakraLink>
+              <Icon as={FaChevronLeft} fontSize={14} />
+            </ChakraLink>
+          </Link>
+        </Container>
       )}
       <Img src="/img/logo.svg" alt="world trip" w={[20, 32, 48]} />
     </Flex>
