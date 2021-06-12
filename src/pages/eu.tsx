@@ -11,8 +11,8 @@ import {
   PopoverContent,
   PopoverTrigger,
   PopoverArrow,
-  PopoverCloseButton,
   PopoverBody,
+  Container,
 } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
 
@@ -43,51 +43,57 @@ export default function Home() {
         </Heading>
       </Flex>
 
-      <Flex direction="column" mt={6} px={4}>
-        <Text fontSize="sm" textAlign="justify">
-          A Europa é, por convenção, um dos seis continentes do mundo.
-          Compreendendo a península ocidental da Eurásia, a Europa geralmente
-          divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-          rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
-        </Text>
+      <Container maxW="1240px">
+        <Flex direction="column" mt={6}>
+          <Text fontSize="sm" textAlign="justify">
+            A Europa é, por convenção, um dos seis continentes do mundo.
+            Compreendendo a península ocidental da Eurásia, a Europa geralmente
+            divide-se da Ásia a leste pela divisória de águas dos montes Urais,
+            o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+          </Text>
 
-        <Flex justify="space-between" mt={4}>
-          <Box>
-            <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
-              50
-            </Text>
-            <Text fontSize="lg">países</Text>
-          </Box>
-          <Box>
-            <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
-              60
-            </Text>
-            <Text fontSize="lg">línguas</Text>
-          </Box>
-          <Box>
-            <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
-              24
-            </Text>
-            <Flex>
-              <Text fontSize="lg">cidades +100</Text>
-              <Popover>
-                <PopoverTrigger>
-                  <Button variant="unstyled" h="auto" minW="auto" ml={1}>
-                    <Icon as={FiInfo} color="gray.400" opacity="0.5" />
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent>
-                  <PopoverArrow />
-                  <PopoverBody>
-                    As cidades +100 são as cidades que o continente possui que
-                    estão entre as 100 cidades mais visitadas do mundo.
-                  </PopoverBody>
-                </PopoverContent>
-              </Popover>
-            </Flex>
-          </Box>
+          <Flex justify="space-between" mt={4}>
+            <Box>
+              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
+                50
+              </Text>
+              <Text fontSize="lg">países</Text>
+            </Box>
+            <Box>
+              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
+                60
+              </Text>
+              <Text fontSize="lg">línguas</Text>
+            </Box>
+            <Box>
+              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
+                24
+              </Text>
+              <Flex>
+                <Text fontSize="lg">cidades +100</Text>
+                <Popover>
+                  <PopoverTrigger>
+                    <Button variant="unstyled" h="auto" minW="auto" ml={1}>
+                      <Icon as={FiInfo} color="gray.400" opacity="0.5" />
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverBody>
+                      As cidades +100 são as cidades que o continente possui que
+                      estão entre as 100 cidades mais visitadas do mundo.
+                    </PopoverBody>
+                  </PopoverContent>
+                </Popover>
+              </Flex>
+            </Box>
+          </Flex>
         </Flex>
-      </Flex>
+
+        <Heading as="h3" fontWeight="medium" fontSize="2xl" mt={8}>
+          Cidades +100
+        </Heading>
+      </Container>
     </>
   );
 }
