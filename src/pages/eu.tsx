@@ -7,13 +7,9 @@ import {
   Icon,
   Image,
   Text,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-  PopoverArrow,
-  PopoverBody,
   Container,
   SimpleGrid,
+  Tooltip,
 } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
 
@@ -72,20 +68,15 @@ export default function Home() {
               </Text>
               <Flex>
                 <Text fontSize="lg">cidades +100</Text>
-                <Popover>
-                  <PopoverTrigger>
-                    <Button variant="unstyled" h="auto" minW="auto" ml={1}>
-                      <Icon as={FiInfo} color="gray.400" opacity="0.5" />
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent>
-                    <PopoverArrow />
-                    <PopoverBody>
-                      As cidades +100 são as cidades que o continente possui que
-                      estão entre as 100 cidades mais visitadas do mundo.
-                    </PopoverBody>
-                  </PopoverContent>
-                </Popover>
+                <Tooltip
+                  hasArrow
+                  closeOnClick={false}
+                  label="As cidades +100 são as cidades que o continente possui que estão entre as 100 cidades mais visitadas do mundo."
+                >
+                  <Button variant="unstyled" h="auto" minW="auto" ml={1}>
+                    <Icon as={FiInfo} color="gray.400" opacity="0.5" />
+                  </Button>
+                </Tooltip>
               </Flex>
             </Box>
           </Flex>
