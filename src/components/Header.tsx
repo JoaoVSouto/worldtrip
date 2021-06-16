@@ -26,7 +26,7 @@ export default function Header() {
         <Container maxW="1240px" pos="absolute">
           <Link href="/" passHref>
             <ChakraLink>
-              <Icon as={FaChevronLeft} fontSize={14} />
+              <Icon as={FaChevronLeft} fontSize={[14, 16, 18]} />
             </ChakraLink>
           </Link>
         </Container>
