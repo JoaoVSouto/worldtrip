@@ -146,9 +146,9 @@ export default function Home() {
         <SimpleGrid
           minChildWidth="256px"
           justifyItems="center"
-          gap={5}
-          mt={5}
-          mb={4}
+          gap={{ base: 5, md: 8, lg: 12 }}
+          mt={{ base: 5, md: 8, lg: 10 }}
+          mb={{ base: 4, md: 6, lg: 9 }}
         >
           <Flex direction="column" w={256} borderRadius="2xl">
             <Image
