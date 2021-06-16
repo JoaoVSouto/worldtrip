@@ -24,7 +24,7 @@ export default function Home() {
 
       <Header />
 
-      <Flex h={40} justify="center" align="center" pos="relative">
+      <Flex h={{ base: 40, md: 300, lg: 500 }} pos="relative">
         <Image
           src="https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
           alt="Fotografia retirada durante o dia de uma cidade ao lado de um corpo d'água"
@@ -35,9 +35,21 @@ export default function Home() {
           zIndex={-1}
           filter="brightness(0.5)"
         />
-        <Heading color="gray.50" fontWeight="semibold">
-          Europa
-        </Heading>
+        <Container
+          maxW="1240px"
+          d="flex"
+          justifyContent={{ base: 'center', md: 'flex-start' }}
+          alignItems={{ base: 'center', md: 'flex-end' }}
+        >
+          <Heading
+            color="gray.50"
+            fontWeight="semibold"
+            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+            mb={{ md: 8, lg: 14 }}
+          >
+            Europa
+          </Heading>
+        </Container>
       </Flex>
 
       <Container maxW="1240px">
