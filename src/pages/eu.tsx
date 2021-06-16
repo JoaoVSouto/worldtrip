@@ -53,33 +53,73 @@ export default function Home() {
       </Flex>
 
       <Container maxW="1240px">
-        <Flex direction="column" mt={6}>
-          <Text fontSize="sm" textAlign="justify">
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          justify={{ md: 'space-between' }}
+          mt={[6, 8, 12, 20]}
+        >
+          <Text
+            fontSize={{ base: 'sm', md: 'xl', lg: '2xl' }}
+            textAlign="justify"
+            maxW={{ base: 'unset', lg: 600 }}
+          >
             A Europa é, por convenção, um dos seis continentes do mundo.
             Compreendendo a península ocidental da Eurásia, a Europa geralmente
             divide-se da Ásia a leste pela divisória de águas dos montes Urais,
             o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
           </Text>
 
-          <Flex justify="space-between" mt={4}>
-            <Box>
-              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
+          <Flex
+            justify="space-between"
+            align={{ md: 'center' }}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 12 }}
+          >
+            <Box textAlign={{ md: 'center' }}>
+              <Text
+                color="yellow.400"
+                fontWeight="semibold"
+                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
+              >
                 50
               </Text>
-              <Text fontSize="lg">países</Text>
+              <Text
+                fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
+                fontWeight={{ md: 'semibold' }}
+              >
+                países
+              </Text>
             </Box>
-            <Box>
-              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
+            <Box textAlign={{ md: 'center' }} ml={{ md: 4, lg: 10 }}>
+              <Text
+                color="yellow.400"
+                fontWeight="semibold"
+                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
+              >
                 60
               </Text>
-              <Text fontSize="lg">línguas</Text>
+              <Text
+                fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
+                fontWeight={{ md: 'semibold' }}
+              >
+                línguas
+              </Text>
             </Box>
-            <Box>
-              <Text color="yellow.400" fontWeight="semibold" fontSize="2xl">
-                24
+            <Box textAlign={{ md: 'center' }} ml={{ md: 4, lg: 10 }}>
+              <Text
+                color="yellow.400"
+                fontWeight="semibold"
+                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
+              >
+                27
               </Text>
               <Flex>
-                <Text fontSize="lg">cidades +100</Text>
+                <Text
+                  fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
+                  fontWeight={{ md: 'semibold' }}
+                >
+                  cidades +100
+                </Text>
                 <Tooltip
                   hasArrow
                   closeOnClick={false}
