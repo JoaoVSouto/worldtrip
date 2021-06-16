@@ -1,9 +1,19 @@
-import { Box, Button, Flex, Icon, Text, Tooltip } from '@chakra-ui/react';
+import { Button, Flex, Icon, Tooltip } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
 
 import Info from './Info';
 
-export default function ContinentInfo() {
+type ContinentInfoProps = {
+  countries: number;
+  languages: number;
+  hundredPlusCities: number;
+};
+
+export default function ContinentInfo({
+  countries,
+  hundredPlusCities,
+  languages,
+}: ContinentInfoProps) {
   return (
     <Flex
       justify="space-between"
@@ -11,9 +21,9 @@ export default function ContinentInfo() {
       mt={{ base: 4, md: 0 }}
       ml={{ md: 12 }}
     >
-      <Info number={50} subtitle="países" />
-      <Info number={60} subtitle="línguas" addMarginLeft />
-      <Info number={27} subtitle="cidades +100" addMarginLeft>
+      <Info number={countries} subtitle="países" />
+      <Info number={languages} subtitle="línguas" addMarginLeft />
+      <Info number={hundredPlusCities} subtitle="cidades +100" addMarginLeft>
         <Tooltip
           hasArrow
           closeOnClick={false}
