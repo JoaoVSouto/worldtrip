@@ -14,6 +14,7 @@ import {
 import { FiInfo } from 'react-icons/fi';
 
 import Header from 'components/Header';
+import ContinentBanner from 'components/ContinentBanner';
 
 export default function Home() {
   return (
@@ -24,33 +25,13 @@ export default function Home() {
 
       <Header />
 
-      <Flex h={{ base: 40, md: 300, lg: 500 }} pos="relative">
-        <Image
-          src="https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-          alt="Fotografia retirada durante o dia de uma cidade ao lado de um corpo d'água"
-          objectFit="cover"
-          pos="absolute"
-          h="100%"
-          w="100%"
-          zIndex={-1}
-          filter="brightness(0.5)"
-        />
-        <Container
-          maxW="1240px"
-          d="flex"
-          justifyContent={{ base: 'center', md: 'flex-start' }}
-          alignItems={{ base: 'center', md: 'flex-end' }}
-        >
-          <Heading
-            color="gray.50"
-            fontWeight="semibold"
-            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-            mb={{ md: 8, lg: 14 }}
-          >
-            Europa
-          </Heading>
-        </Container>
-      </Flex>
+      <ContinentBanner
+        name="Europa"
+        img={{
+          src: 'https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+          alt: "Fotografia retirada durante o dia de uma cidade ao lado de um corpo d'água",
+        }}
+      />
 
       <Container maxW="1240px">
         <Flex
