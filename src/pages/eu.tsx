@@ -134,7 +134,12 @@ export default function Home() {
           </Flex>
         </Flex>
 
-        <Heading as="h3" fontWeight="medium" fontSize="2xl" mt={8}>
+        <Heading
+          as="h3"
+          fontWeight="medium"
+          fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+          mt={{ base: 8, md: 12, lg: 20 }}
+        >
           Cidades +100
         </Heading>
 
