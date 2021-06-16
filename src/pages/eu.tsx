@@ -15,6 +15,7 @@ import { FiInfo } from 'react-icons/fi';
 
 import Header from 'components/Header';
 import ContinentBanner from 'components/ContinentBanner';
+import ContinentInfo from 'components/ContinentInfo';
 
 export default function Home() {
   return (
@@ -50,69 +51,7 @@ export default function Home() {
             o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
           </Text>
 
-          <Flex
-            justify="space-between"
-            align={{ md: 'center' }}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 12 }}
-          >
-            <Box textAlign={{ md: 'center' }}>
-              <Text
-                color="yellow.400"
-                fontWeight="semibold"
-                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
-              >
-                50
-              </Text>
-              <Text
-                fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
-                fontWeight={{ md: 'semibold' }}
-              >
-                países
-              </Text>
-            </Box>
-            <Box textAlign={{ md: 'center' }} ml={{ md: 4, lg: 10 }}>
-              <Text
-                color="yellow.400"
-                fontWeight="semibold"
-                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
-              >
-                60
-              </Text>
-              <Text
-                fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
-                fontWeight={{ md: 'semibold' }}
-              >
-                línguas
-              </Text>
-            </Box>
-            <Box textAlign={{ md: 'center' }} ml={{ md: 4, lg: 10 }}>
-              <Text
-                color="yellow.400"
-                fontWeight="semibold"
-                fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
-              >
-                27
-              </Text>
-              <Flex>
-                <Text
-                  fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
-                  fontWeight={{ md: 'semibold' }}
-                >
-                  cidades +100
-                </Text>
-                <Tooltip
-                  hasArrow
-                  closeOnClick={false}
-                  label="As cidades +100 são as cidades que o continente possui que estão entre as 100 cidades mais visitadas do mundo."
-                >
-                  <Button variant="unstyled" h="auto" minW="auto" ml={1}>
-                    <Icon as={FiInfo} color="gray.400" opacity="0.5" />
-                  </Button>
-                </Tooltip>
-              </Flex>
-            </Box>
-          </Flex>
+          <ContinentInfo />
         </Flex>
 
         <Heading
